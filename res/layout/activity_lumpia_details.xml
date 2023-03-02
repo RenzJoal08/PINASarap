@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:id="@+id/scroll"
+    tools:context=".Lumpia_Details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="900dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/searchbar">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_stat_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Recipe Details"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="Lumpiang Sariwa"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lumpia_1"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lumpia_2"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lumpia_3"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lumpia_4"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lumpia_5"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="460dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:padding="20sp"
+                android:text="Lumpiang Sariwa is another variety of Filipino spring rolls. The filling is made up of a variety of vegetables, shrimp, and pork. Tofu that is firm can also be used. A crepe-like wrapper is then used to wrap or roll the filling."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="640dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingredients"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                android:fillViewport="true"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tofu" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="10 ounces fried tofu"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shrimp" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1/2 cup small shrimp"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cabbage" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1/2 chopped cabbage"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/greenbeans" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-95dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="3/4 cup green beans"
+                        android:textColor="@color/black"/>
+
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/carrot" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-85dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1 piece carrot"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/potato" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-75dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1 cup potato"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/parseley" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-85dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="3 tbsp parsley"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/white_onion" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-90dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1pc white onion "
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/garlic" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="2 cloves minced garlic"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fishsauce" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-85dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="2tbsp fish sauce"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/water" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-85dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1/2 cup water"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/groundpepper" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-95dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1/8 tsp ground pepper"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/oil" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-85dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="3tbsp cooking oil"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/wrapper" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-85dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="Lumpia wrapper"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/brownsugar" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-85dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="6tbsp brown sugar"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/soysauce" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-95dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1 1/2tbsp soy sauce"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cornstarch" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-85dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1tbsp cornstarch"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="950dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Procedures"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <WebView
+                android:id="@+id/lumpiaproce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="70dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="1550dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/lumpia_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_top"
+                app:fabCustomSize="60dp"
+                app:elevation="10dp"
+                app:backgroundTint="@color/back_top"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:id="@+id/scroll"
+    tools:context=".Appetizer_Dish">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/bg_color"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_stat_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="-60dp"
+                android:gravity="center"
+                android:text="APPETIZERS"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/app_search_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/search_round"
+                android:hint="Search recipe here"
+                android:paddingLeft="60dp"
+                android:cursorVisible="false"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="-42dp"
+                android:src="@drawable/ic_baseline_search_24" />
+        </LinearLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:columnCount="1"
+            android:rowCount="6">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="580dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chicharonbulaklak" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Chicharon Bulaklak "
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text=" Chicharon Bulaklak or deep-fried ruffled fat is a popular Filipino appetizer. It is often consumed with alcoholic drinks and is best eaten when dipped in spicy vinegar. Chicharon bulaklak is at is best form right after frying when it is still warm and the texture is extra crispy."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/chicharon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="View Recipe"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/dish_btn"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/freshlumpia"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Fresh Lumpia"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text=" Lumpiang Sariwa is another variety of Filipino spring rolls. The filling is made up of a variety of vegetables, shrimp, and pork. Tofu that is firm can also be used. A crepe-like wrapper is then used to wrap or roll the filling. We call it fresh because it is not fried like other spring rolls such as Lumpiang Shanghai, Lumpiang Prito, or Lumpiang Togue. It also comes with a sweet and savory sauce that is topped with chopped peanuts."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/lumpia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/dish_btn"
+                        android:text="View Recipe"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="590dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lumpiang_togue"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Lumpiang Togue "
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Lumpiang Togue is filled with bean sprouts, carrots, green beans, pork, and shrimp for a hearty and filling treat. Golden, crunchy and delicious, these Filipino-style vegetable spring rolls are the perfect snack or appetizer. Serve with a side of spicy vinegar for dipping. "
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/togue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/dish_btn"
+                        android:text="View Recipe"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="590dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sisig"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="  Sizzling Crispy Pork Sisig "
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Pork sisig is a popular Filipino dish. It can be considered as a main dish or an appetizer. The composition of this dish is mainly of pig’s parts such as minced pork meat, ears, and face. Chicken liver, onions, and chili peppers are also added. Sisig is synonymous to “pulutan”."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/sisig"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/dish_btn"
+                        android:text="View Recipe"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tokwat_baboy"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Tokwa't Baboy "
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Tokwa't baboy is a typical Philippine appetizer. It consists of pork ears, pork belly and deep-fried tofu, and is served in a mixture of soy sauce, pork broth, vinegar, chopped white onions, scallions and red chili peppers. It is usually served as pulutan, as a meal served with rice or as a side dish to rice porridge.."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/tokwa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/dish_btn"
+                        android:text="View Recipe"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="560dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/calamares2"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Calamares "
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text=" Calamares is the Filipino version of the Mediterranean breaded fried squid dish, Calamari. There are different methods on how to make this dish; the most usual does not involve breadcrumbs."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/calamares"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/dish_btn"
+                        android:text="View Recipe"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="4100dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/appe_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_top"
+                app:fabCustomSize="60dp"
+                app:elevation="10dp"
+                app:backgroundTint="@color/back_top"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

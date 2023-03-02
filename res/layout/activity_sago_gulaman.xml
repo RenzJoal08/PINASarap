@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:id="@+id/scroll"
+    tools:context=".Adobo_Details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="900dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/searchbar">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_stat_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Recipe Details"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="Sago't Gulaman"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sago_1"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sago_2"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sago_3"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sago_4"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sago_5"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginTop="460dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:padding="20sp"
+                android:text="A local Filipino beverage made of brown sugar, water, gelatin, and tapioca pearls is called Sago at Gulaman. Sago refers to tapioca pearls while gulaman is the Filipino term for gelatin."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="630dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingredients"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                android:fillViewport="true"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tapioca" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginBottom="-60dp"
+                        android:text="3cups tapioca pearls"
+                        android:textColor="@color/black"
+                        android:textSize="5pt" />
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gelatin" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-105dp"
+                        android:layout_marginBottom="-60dp"
+                        android:text="1 sachet gelatin powder"
+                        android:textColor="@color/black"
+                        android:textSize="5pt" />
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/brownsugar" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginBottom="-60dp"
+                        android:text="3 cups brown sugar"
+                        android:textColor="@color/black"
+                        android:textSize="5pt" />
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/vanilla" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginBottom="-60dp"
+                        android:text="1 tbsp vanilla extract"
+                        android:textColor="@color/black"
+                        android:textSize="5pt" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/water" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-95dp"
+                        android:layout_marginBottom="-60dp"
+                        android:text="2 to 3 cups of water"
+                        android:textColor="@color/black"
+                        android:textSize="5pt" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="920dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Procedures"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <WebView
+                android:id="@+id/sago_gulaman_proce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="50dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="1410dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/sago_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_top"
+                app:fabCustomSize="60dp"
+                app:elevation="10dp"
+                app:backgroundTint="@color/back_top"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:id="@+id/scroll"
+    tools:context=".Drinks_Dish">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/bg_color"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_stat_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="-60dp"
+                android:gravity="center"
+                android:text="DRINKS"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/drinks_search_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/search_round"
+                android:hint="Search recipe here"
+                android:paddingLeft="60dp" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="-42dp"
+                android:src="@drawable/ic_baseline_search_24" />
+        </LinearLayout>
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:columnCount="1"
+            android:rowCount="6">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="560dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/avocado2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Avocado Shake "
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text=" Avocado Shake is a popular Filipino dessert made out of Avocadoes, Milk, Sugar and Ice blended to create a creamy cold shake perfect for any hot and humid weather.."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/avocado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="View Recipe"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/dish_btn"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banana1"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Banana Shake"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text=" Banana smoothies make delicious beverages, snacks and even meal replacements for weight loss. You can make them using exclusively bananas or add fresh fruit, dairy, nuts and seeds. Whether you’re trying to lose pounds or just need to quench your thirst, learn how to make a banana smoothie at home."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/banana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/dish_btn"
+                        android:text="View Recipe"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="540dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mango"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Mango Shake "
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text=" Mango Shake (Mango Milkshake) is a cool and tempting fruit drink prepared by simply blending ripe mango pieces, milk and sugar."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/mango"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/dish_btn"
+                        android:text="View Recipe"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="560dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gulamann"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Sago't Gulaman "
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="A local Filipino beverage made of brown sugar, water, gelatin, and tapioca pearls is called Sago at Gulaman. Sago refers to tapioca pearls while gulaman is the Filipino term for gelatin."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/sago"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/dish_btn"
+                        android:text="View Recipe"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bj"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Fresh Buko Juice "
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Buko “juice” is filling, hydrating, and oh-so-refreshing on a hot day, while the meat has a slightly sweet, delicate coconutty flavor that's especially satisfying after a big meal. It is a simple mixture of young coconut water, young coconut meat and milk, it's very refreshing and very healthy.."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/buko"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="@color/dish_btn"
+                        android:text="View Recipe"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="-10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="570dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/strawberry"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text=" Strawberry Smoothie "
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text=" Strawberry Smoothie prepared with this recipe is simply heaven because it uses bare minimum ingredients like fresh strawberries,  and milk to bring out three good qualities of any shake; fresh, creamy and flavorful.."
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"
+                        android:textColor="@color/black"
+                        android:padding="15sp"/>
+
+                    <Button
+                        android:id="@+id/strawberry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/dish_btn"
+                        android:text="View Recipe"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="3960dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/drinks_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_top"
+                app:fabCustomSize="60dp"
+                app:elevation="10dp"
+                app:backgroundTint="@color/back_top"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

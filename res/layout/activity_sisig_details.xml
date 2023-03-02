@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:id="@+id/scroll"
+    tools:context=".Sisig_Details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="900dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/searchbar">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_stat_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Recipe Details"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="Sizzling Crispy Pork Sisig"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sisig_1"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sisig_2"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sisig_3"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sisig_4"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sisig_5"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_marginTop="460dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:padding="12sp"
+                android:text=" Pork sisig is a popular Filipino dish. It can be considered as a main dish or an appetizer. The composition of this dish is mainly of pig’s parts such as minced pork meat, ears, and face. Chicken liver, onions, and chili peppers are also added. "
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="640dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingredients"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                android:fillViewport="true"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pork_belly" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-95dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1 1/2 lbs pork belly"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mayo" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-95dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1/2 cup mayonnaise "
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chillipepper" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-90dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="4pcs chilli pepper"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/greenbellpepper" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-105dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="2pcs green bellpepper"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/onion" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-100dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1tbsp minced onion"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/savor" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-110dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="16 grams Knorr SavorRich"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/soysauce" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-85dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="2tbsp soy sauce"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/groundpepper" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-95dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1/8 tsp ground pepper"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/oil" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-85dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="2 cups cooking oil"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/margarine" />
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-90dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1/4 cup margarine"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="930dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Procedures"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <WebView
+                android:id="@+id/sisigproce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="70dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="1540dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/sisig_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_top"
+                app:fabCustomSize="60dp"
+                app:elevation="10dp"
+                app:backgroundTint="@color/back_top"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:id="@id/scroll"
+    tools:context=".Pata_Details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="900dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/searchbar">
+
+            <ImageView
+                android:id="@+id/pata_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_stat_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Recipe Details"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="Crispy Pata"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/crispypata"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/crispypata_1"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/crispypata_2"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/crispypata_3"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/crispypata_4"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewAlbum" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginTop="450dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:padding="20sp"
+                android:text="Crispy Pata or crispy pork leg is a popular Filipino pork dish. This dish can be eaten as a main dish along with rice and atcharang papaya. People also consume it as beer food or pulutan. It is best when dipped in a spicy vinegar mixture."
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="640dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingredients"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                android:fillViewport="true"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bayleaves" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-90dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="6pcs bay leaves"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pigleg" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-90dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="1pc clean pig leg"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/staranise" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-90dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="4pt"
+                        android:text="4pcs star anise(optional) "
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/oil" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-75dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="6 cups oil"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/peppercorn" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-95dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="2tbsp peppercorn"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/salt" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-75dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="6tsp Salt"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/groundpepper" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-95dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="2tsp black pepper"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/garlicpowder" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-90dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="2tsp garlic powder"
+                        android:textColor="@color/black"/>
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/water" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="-80dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_gravity="center"
+                        android:textSize="5pt"
+                        android:text="12 cups water"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="930dp"
+            android:layout_marginRight="25dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Procedures"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <WebView
+                android:id="@+id/pataproce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="50dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="1540dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/pata_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_top"
+                app:fabCustomSize="60dp"
+                app:elevation="10dp"
+                app:backgroundTint="@color/back_top"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
