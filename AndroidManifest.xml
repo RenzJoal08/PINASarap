@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.group_2_BSIT_3D_NS.pinasarap">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PINASarap"
+        tools:targetApi="27">
+
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainMenu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".MainMenu" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainSearchRecycle"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".AppeSearchRecycle"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".MainDishSearchRecycle"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".DrinksSearchRecycle"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".DessertsSearchRecycle"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+
+
+        <activity
+            android:name=".Appetizer_Dish"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Main_Dish"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Drinks_Dish"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Dessert_Dish"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+
+
+        <activity
+            android:name=".Adobo_Details"
+            android:label="PINASARAP"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Karekare_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".ChickenInasal_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Pata_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Sinigang_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Kaldereta_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+
+
+
+        <activity
+            android:name=".ChicharonBulaklak_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Lumpia_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".LumpiangTogue_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Sisig_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".TokwatBaboy_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Calamares_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+
+
+        <activity
+            android:name=".Avocado_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Buko_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Banana_details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Mango_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Strawberry_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Sago_Gulaman"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+
+
+
+        <activity
+            android:name=".Buko_salad_Details"
+            android:label="PINASarap"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".LecheFlan_Details"
+            android:label="PINASarap"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".CoffeeJelly_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".Halo_Halo_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".MangoFloat_Details"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+        <activity
+            android:name=".MajaBlanca"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PINASarap" />
+
+
+
+    </application>
+
+</manifest>
