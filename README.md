@@ -1,7 +1,7 @@
 # PINASarap
 PINASarap is a Filipino dish recipe mobile application.
 
-Programming Language: Java and HTML.
+Programming Language: Java and HTML
 
 How the program works:
 
