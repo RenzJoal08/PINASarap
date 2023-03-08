@@ -10,5 +10,5 @@ How the program works:
 3. Then put the APK file in your mobile phone and install the application.
 4. Open the application, then browse the Filipino dishes.
 5. You can click the dish categories, and in every category there are varieties of Filipino dish.
-6. Also, you can search Filipino dishes by using the search feature in the application.
+6. Also, you can search Filipino dishes and categories by using the search feature in the application.
 7. In every variety of dish, you can click the dish to view its description, ingredients, and procedures.
